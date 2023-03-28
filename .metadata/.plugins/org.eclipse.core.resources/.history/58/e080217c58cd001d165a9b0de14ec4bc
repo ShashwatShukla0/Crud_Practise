@@ -1,0 +1,17 @@
+package com.example.demo;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+@Document(collection="Movies")
+public class CrudModel {
+	
+	@Id
+	int id;
+	
+	String title;
+	String genre;
+	String year;
+
+}
